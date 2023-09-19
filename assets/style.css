@@ -130,6 +130,7 @@ main:hover .cover-image {
   gap: 5px;
   justify-content: flex-end;
   align-items: center;
+  z-index: 100;
 }
 
 .footer-link {
@@ -170,6 +171,43 @@ main:hover .cover-image {
     background-color: #ababab1c;
     color: transparent;
     border-radius: 100px;
+}
+
+.error {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #101827;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-message {
+    text-align: center;
+}
+
+.error-message {}
+
+.error-message * {
+    font-weight: revert;
+    font-size: 3.5vw;
+}
+
+.error-link {display: flex;text-decoration: none;color: #fff;justify-content: center;}
+
+.error-link > * {
+    font-size: 12px;
+}
+
+.error-dev {
+    background-color: #1f2937;
+    border-radius: 5px;
+    font-size: 8px;
+    font-weight: lighter;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    padding: 5px 10px;
+    margin: 10px;
 }
 
 

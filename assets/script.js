@@ -1,9 +1,11 @@
-window.onload = async function() {
+async function loadWidget() {
   var url = new URL(location.href)
 
   var publishable_key = url.searchParams.get("key")
   var modelId = url.searchParams.get("model")
   var version = url.searchParams.get("version")
+
+  if(!publishable_key||!modelId||!version) throw Error("One of the following required URL parameters are missing: key, model, version")
 
   console.log(publishable_key,modelId,version)
 
@@ -39,5 +41,17 @@ url("https://source.roboflow.com/${metadata.icon}/annotation-people.png"), url("
     e.classList.forEach((value,key,parent)=>{
       if(value.includes("loading")) e.classList.remove(value)
     })
+  })
+}
+
+function showError() {
+  error.style.display = "flex"
+}
+
+window.onload = function() {
+  loadWidget().catch(e => {
+    console.error(e)
+
+    showError()
   })
 }

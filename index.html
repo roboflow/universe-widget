@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Roboflow Widget</title>
+  <link href="assets/style.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://cdn.roboflow.com/0.2.26/roboflow.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&amp;display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <a class="cover-image" id="image" target="_blank"></a>
+    <div class="main-card">
+      <h3 class="card-universe loading-universe">Computer Vision Model</h3>
+      <h1 class="card-project loading-title" id="title"></h1>
+      <div class="card-tags">
+        <div class="card-tag model-type tag-object-detection">
+          <i class="fa-regular fa-object-ungroup card-tag-icon"></i>
+          <p class="card-tag-label">Object Detection</p>
+        </div>
+        <div class="card-tag model-type tag-object-detection">
+          <i class="fa-solid fa-draw-polygon card-tag-icon"></i>
+          <p class="card-tag-label">Instance Segmentation</p>
+        </div>
+        <div class="card-tag model-type tag-object-detection">
+          <i class="fa-solid fa-vector-square card-tag-icon"></i>
+          <p class="card-tag-label">Classification</p>
+        </div>
+        <div class="card-tag loading-hide">
+          <p class="card-tag-label" id="annotation"></p>
+        </div>
+        <div class="card-tag loading-hide">
+          <p class="card-tag-label" id="classesCount"></p>
+        </div>
+      </div>
+      <div class="card-actions">
+        <div class="card-action tryit loading-action">
+          <a id="tryLink" target="_blank">Try it on Universe</a>
+        </div>
+        <div class="card-action loading-action" id="copyLink">
+          <i class="fa-solid fa-link card-action-icon"></i>
+          <p class="card-action-label">Copy Link</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <a class="footer-link" href="https://universe.roboflow.com">Roboflow Universe</a>
+    <img class="footer-logo" src="https://universe.roboflow.com/images/logomark-gradient.svg">
+  </footer>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="assets/script.js"></script>
+</body>
+
+</html>

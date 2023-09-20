@@ -115,10 +115,19 @@ main:hover .cover-image {
   font-size: 12.5px;
 }
 
-.tryit>a {
-  font-size: 12px;
-  text-decoration: none;
+.tryit {
+  background-color: #35ecd9;
   color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.tryit a {
+  color: rgb(31, 41, 55);
+  text-decoration: none;
 }
 
 .footer {
